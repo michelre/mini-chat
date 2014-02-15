@@ -1,0 +1,166 @@
+body{
+    height:700px;
+    margin-bottom: 30px;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    overflow: hidden;
+
+}
+
+.info-global, .chatroom{
+    display: inline-block;
+    width:600px;
+    height: 585px;
+    vertical-align: top;
+    margin-top: 15px;
+}
+
+.chatroom{
+    padding-left:20px;
+    margin-left: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    box-shadow: 4px 4px 10px rgb(102, 100, 100);
+}
+
+.login, .info-chatroom, .write-msg{
+    display:block;
+    border: 1px solid #d1d1d1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 10px rgb(102, 100, 100);
+    padding: 15px;
+}
+
+.info-chatroom{
+    height:251px;
+}
+
+.info-chatroom .news, .info-chatroom .users{
+    width:250px;
+    height: 250px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 20px;
+}
+
+.info-chatroom .news{
+    border-right: 1px solid black;
+}
+
+.info-chatroom .users .participants{
+    list-style: circle;
+}
+
+.info-chatroom .users .participants li{
+    line-height: 25px;
+}
+
+
+.write-msg{
+    height:160px;
+}
+
+.write-msg textarea{
+    margin-left: 20px;
+    width: 400px;
+    height: 140px;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.428571429;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+.write-msg button{
+    margin-top: -40px;
+    height: 48px;
+    color: #fff;
+    background-color: #3276b1;
+    border-color: #285e8e;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+}
+
+.login input{
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;
+    height: 35px;
+    padding: 6px 12px;
+    font-size: 18px;
+    line-height: 1.428571429;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login button{
+    margin-top: -5px;
+    height: 48px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+}
+
+.login button.active{
+    background-color: #3276b1;
+    border-color: #285e8e;
+}
+
+.login button.inactive{
+    background-color: #d2322d;
+    border-color: #ac2925;
+    width: 550px;
+}
+
+textarea.msg{
+    width:550px;
+    height: 450px;
+    resize: none;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.428571429;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}

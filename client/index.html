@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="../socket.io/socket.io.js"></script>
+    <script>
+        var socket = io.connect("http://localhost:6061");
+    </script>
+</head>
+<body>
+
+<div class="info-global">
+    <div class="login"></div>
+    <div class="info-chatroom">
+        <div class="news">
+            <h2>Actualités</h2>
+            <ul class="newsList"></ul>
+        </div>
+        <div class="users">
+            <h2>Participants</h2>
+            <ul class="participants"></ul>
+        </div>
+    </div>
+    <div class="write-msg">
+        <textarea placeholder="Votre message"></textarea>
+        <button>Envoyer</button>
+    </div>
+</div>
+
+<div class="chatroom">
+    <h1>Chatroom</h1>
+    <textarea class="msg" readonly></textarea>
+</div>
+
+<script src="js/lib/jquery-min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
